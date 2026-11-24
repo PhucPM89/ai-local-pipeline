@@ -13,7 +13,7 @@ Dự án cung cấp trọn bộ giải pháp kỹ thuật để tự triển kha
 [Huấn Luyện QLoRA Miễn Phí (train_kaggle.ipynb / train_lora.py)]
                 │
                 ▼
-[Mô Hình Không Kiểm Duyệt (Qwen2.5-7B-Instruct-Abliterated)]
+[Mô Hình Không Kiểm Duyệt (Dolphin 3.0 - Llama 3.1 8B)]
                 │
        ┌────────┴────────┐
        ▼                 ▼
@@ -45,21 +45,21 @@ d:\AILocal\
 
 ## 3. Đặc Điểm Nổi Bật
 
-1. **Không kiểm duyệt (Abliterated Core)**: Sử dụng kỹ thuật triệt tiêu vector từ chối (Refusal Vector Abliteration), giúp AI đi thẳng vào giải quyết vấn đề kỹ thuật (kiểm thử mạng, phân tích mã nguồn, bảo mật) mà không từ chối hoặc giảng đạo đức.
+1. **Không kiểm duyệt tuyệt đối (Dolphin 3.0 Core)**: Sử dụng mô hình **Dolphin 3.0 (Llama 3.1 8B)** do Eric Hartford / Cognitive Computations phát triển, loại bỏ hoàn toàn các bộ lọc từ khóa và cơ chế từ chối, giúp AI phản hồi trực tiếp các yêu cầu kỹ thuật và phân tích mã nguồn mà không từ chối hay giảng đạo đức.
 2. **Ép buộc phản hồi bằng tiếng Việt**: Đã cấu hình chỉ thị hệ thống để mô hình luôn luôn trả lời bằng tiếng Việt tự nhiên, chuẩn xác và mạch lạc.
 3. **Phù hợp máy cấu hình phổ thông**:
-   - Sử dụng định dạng nén lượng tử **GGUF 4-bit (Q4_K_M)**, dung lượng chỉ ~4.36 GB.
+   - Sử dụng định dạng nén lượng tử **GGUF 4-bit (Q4_K_M)**, dung lượng ~4.58 GB.
    - Vận hành mượt mà trên máy tính 16GB RAM + CPU Ryzen 7 / Intel Core i7.
-4. **Huấn luyện miễn phí trên Cloud (Kaggle)**: Không cần card đồ họa đắt tiền, sử dụng tài nguyên GPU T4 miễn phí của Kaggle để huấn luyện và xuất tệp mô hình tải về máy tính.
+4. **Huấn luyện miễn phí trên Cloud (Kaggle)**: Sử dụng tài nguyên GPU T4 miễn phí của Kaggle để huấn luyện và xuất tệp mô hình GGUF tải về máy tính.
 
 ---
 
 ## 4. Hướng Dẫn Sử Dụng Nhanh
 
 ### Bước 1: Trò chuyện ngoại tuyến với giao diện Bionic
-1. Cài đặt ứng dụng [Bionic](https://bionic-gpt.com) (hoặc LM Studio).
+1. Mở ứng dụng [Bionic](https://bionic-gpt.com) (hoặc LM Studio).
 2. Trỏ đường dẫn **Models Directory** trong mục `Library` về thư mục này (`D:\AILocal`).
-3. Ứng dụng sẽ tự động nhận diện mô hình `Qwen2.5-7B-Instruct-abliterated`.
+3. Ứng dụng sẽ tự động nhận diện mô hình `Dolphin3.0 Llama3.1 8B`.
 4. Mở khung chat và bắt đầu trò chuyện ngoại tuyến 100%.
 
 ### Bước 2: Khởi chạy bằng dòng lệnh (Ollama)
