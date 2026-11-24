@@ -1,0 +1,32 @@
+# Bỏ qua các tệp mô hình nhị phân dung lượng lớn (GGUF, safetensors, bin)
+*.gguf
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# Bỏ qua các thư mục chứa mô hình tải về
+mradermacher/
+models/
+custom_ai_gguf/
+custom_lora_model/
+outputs/
+wandb/
+
+# Môi trường ảo Python & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# Tệp tạm hệ điều hành và nhật ký
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Trạng thái IDE
+.vscode/
+.idea/
